@@ -1,3 +1,29 @@
 .index-title {
   font-size: 100px;
 }
+
+.content {
+  width: calc(100% - 296px);
+  margin-left: auto;
+}
+
+.chapter-title, .chapter-time {
+  font-size: 12px;
+  color: #212529;
+}
+.chapter-desc {
+  color: #212529;
+  font-weight: bold;
+}
+
+.boder-bottom-secpndary {
+  border-bottom: 1px solid #CED4DA;
+}
+
+.toolbar li {
+  margin-right: 28px;
+}
+
+.reply-content {
+  height: 200px;
+}
