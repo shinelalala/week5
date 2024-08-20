@@ -5,56 +5,281 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <script type="module" crossorigin src="/week5/assets/main-8fb2a326.js"></script>
-    <link rel="stylesheet" href="/week5/assets/main-e523073d.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script type="module" crossorigin src="/week5/assets/main-10f9a18c.js"></script>
+    <link rel="stylesheet" href="/week5/assets/main-994fa1c2.css">
   </head>
   <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
 
-    <div class="card" style="width: 18rem">
-      <img src="/week5/assets/cat-0c0689ae.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
+    <div class="d-flex">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light vh-100 position-fixed aside-navbar">
+    <div class="container-fluid flex-column align-items-start px-0 h-100">
+        <div class="d-flex flex-column">
+            <a class="navbar-brand px-2 mb-4" href="#"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/e33e944d6b136d33939dadf6358d65c76ec06e49/week5/logo-ANSWER.svg" alt="admin pic" /></a>
+            <ul class="navbar-nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><span class="material-icons align-bottom ms-4 me-2">insert_chart</span>Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="material-icons align-bottom ms-4 me-2">question_answer</span>Question</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link border-start border-4 border-success text-success" href="#"><span class="material-icons align-bottom ms-4 me-2">assignment</span>Assignment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><span class="material-icons align-bottom ms-4 me-2">video_library</span>Course</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><span class="material-icons align-bottom ms-4 me-2">people</span>Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><span class="material-icons align-bottom ms-4 me-2">settings</span>Settings</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="d-flex px-2">
+            <div class="flex-shrink-0">
+              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/andychen.jpeg?raw=true" alt="andychen pic" class="rounded-circle object-fit-cover" width="48px" height="48px">
+            </div>
+            <div class="flex-grow-1 ms-3">
+                <p class="fw-bold">Andy Chen</p>
+                <a href="mailto:andy0401@mail.com" class="text-muted">andy0401@mail.com</a>
+            </div>
+        </div>
     </div>
+</nav>
+      <main class="main px-4 content">
+        <header>
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-between">
+              <h1 class="navbar-brand fw-bold">Assignment</h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      All Courses
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">class 1</a></li>
+                      <li><a class="dropdown-item" href="#">class 2</a></li>
+                      <li><a class="dropdown-item" href="#">class 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
 
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
+              <ul class="nav">
+                <li class="me-4"><a href="#"><span class="material-icons">search</span></a></li>
+                <li><a href="#"><span class="material-icons">notifications_active</span></a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
 
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="dropdown">
+            <button class="btn btn-white dropdown-toggle fw-bold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              All (4)
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1</a></li>
+              <li><a class="dropdown-item" href="#">2</a></li>
+              <li><a class="dropdown-item" href="#">3</a></li>
+              <li><a class="dropdown-item" href="#">4</a></li>
+            </ul>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+          <div class="">2 comments</div>
+        </div>
+        
+        <div class="d-flex">
+          <div class="list-group me-2 w-30">
+            <a href="#" class="list-group-item list-group-item-action bg-light" aria-current="true">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1 chapter-title">Chapter Assignment 2</h5>
+                <small class="chapter-time">4 hrs ago</small>
+              </div>
+              <div class="d-flex w-100 justify-content-between">
+                <p class="mb-1 chapter-desc">Please check this file…</p>
+                <small class="text-black-50">Emily Wang</small>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1 chapter-title">Chapter Assignment 1</h5>
+                <small class="chapter-time">12 hrs ago</small>
+              </div>
+              <div class="d-flex w-100 justify-content-between">
+                <p class="mb-1 chapter-desc">My Homework</p>
+                <small class="text-black-50">David Xu</small>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1 chapter-title">Final Assignment</h5>
+                <small class="chapter-time">18 hrs ago</small>
+              </div>
+              <div class="d-flex w-100 justify-content-between">
+                <p class="mb-1 chapter-desc">Have a problem with this…</p>
+                <small class="text-black-50">Tony Wei</small>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1 chapter-title">Final Assignment</h5>
+                <small class="chapter-time">19 hrs ago</small>
+              </div>
+              <div class="d-flex w-100 justify-content-between">
+                <p class="mb-1 chapter-desc">Did I do it right?</p>
+                <small class="text-black-50">Christina Lin</small>
+              </div>
+            </a>
+          </div>
+          
+
+          <div class="w-70">
+            <div class="card">
+              <div class="card-header d-flex justify-content-between align-items-center">
+                <div>
+                  <p class="chapter-title">Chapter Assignment 2 / HTML&CSS</p>
+                  <p class="chapter-desc">Please check this file for me, thanks!</p>
+                </div>
+                
+                <div>
+                  <a href="#">
+                    <span class="material-icons">
+                      more_vert
+                    </span>
+                  </a>
+                </div>
+                
+              </div>
+              <div class="card-body">
+                <div class="d-flex px-2">
+                  <div class="flex-shrink-0">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/emilywang.jpeg?raw=true" alt="emilywang pic" class="rounded-circle object-fit-cover" width="48px" height="48px">
+                  </div>
+                  <div class="flex-grow-1 ms-3 boder-bottom-secpndary">
+                      <p class="fw-bold mb-1">Emily Wang</p>
+                      <time datetime="10:38 AM (4 hours ago)" class="text-secondary fz-12">10:38 AM (4 hours ago)</time>
+
+                      <p class="my-4">
+                        Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code>div</code> is bigger than the height of the <code>img</code> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?
+                      </p>
+
+                      <div class="d-flex mb-4">
+                        <a href="#" class="btn btn-light border-1 border-gray fw-bold border-secondary-subtle d-flex align-items-center" download="#"><span class="material-icons">attach_file</span>HW-2-David.zip</a>
+                      </div>
+                  </div>
+                </div>
+                <div class="d-flex px-2 mt-4">
+                  <div class="flex-shrink-0">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week5/andychen.jpeg?raw=true" alt="andychen pic" class="rounded-circle object-fit-cover" width="48px" height="48px">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+
+                      <div class="d-flex align-items-center">
+                        <div>
+                          <p class="fw-bold">Andy Chen (You)</p>
+                          <time datetime="13:24 AM (1 hours ago)" class="text-secondary fz-12 mb-4">13:24 AM (1 hours ago)</time>
+                        </div>
+                        <div class="ms-auto">
+                          <a href="#">
+                            <span class="material-symbols-outlined m-2">
+                              star
+                              </span>
+                          </a>
+                          <a href="#">
+                            <span class="material-icons m-2">
+                              edit
+                            </span></a>
+                        </div>
+                      </div>
+                      
+
+                      <p class="my-4">
+                        Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. </br>
+                        </br>
+                        You can: 　 </br>
+                          <ul>
+                            <li>adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the <code>middle</code> ) or </li>
+                            <li>change the <code>display</code> so it isn’t inline.</li>
+                          </ul>
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="d-flex justify-content-between align-items-center position-relative">
+              <div class="d-flex prev-next">
+                <a href="#"><span class="material-symbols-outlined m-2">keyboard_arrow_left</span></a>
+                <a href="#"><span class="material-symbols-outlined m-2">keyboard_arrow_right</span></a>
+              </div>
+
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-outline-success px-5 py-2 fw-bold my-4 me-2">Mark as read</button>
+                <button class="btn btn-success px-5 py-2 fw-bold my-4" type="button" data-bs-toggle="collapse" data-bs-target="#replyForm" aria-expanded="false" aria-controls="replyForm">
+                  Reply
+                </button>
+                <div class="collapse position-absolute bottom-0 end-0 w-100" id="replyForm">
+                  <div class="card">
+                    <div class="card-header">
+                      <ul class="nav d-flex align-items-center justify-content-start toolbar">
+                        <li>
+                          <div>
+                            <button type="button" class="btn border-0 dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span class="pe-2">Body Text</span>
+                            </button>
+                            <ul class="dropdown-menu" style="">
+                              <li><a class="dropdown-item" href="#">Normal</a></li>
+                              <li><a class="dropdown-item" href="#">bold</a></li>
+                              <li><a class="dropdown-item" href="#">bolder</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href="#"><span class="material-symbols-outlined">format_bold</span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">format_italic</span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">format_list_bulleted</span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">format_list_numbered</span></a></li>
+                        <li><a href="#"><span class="material-icons">image</span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">link</span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">code</span></a></li>
+                      </ul>
+                    </div>
+                    <div class="card card-body d-flex flex-column align-items-end">
+                      <textarea name="reply-content" class="form-control border-0 reply-content" placeholder="Reply an answer…"></textarea>
+  
+                      <div class="d-flex">
+                        <button class="btn btn-outline-success px-5 py-2 fw-bold mt-4 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#replyForm" aria-expanded="false" aria-controls="replyForm">
+                          Cancel
+                        </button>
+                        <button class="btn btn-success px-5 py-2 fw-bold mt-4 " type="button" data-bs-toggle="collapse" data-bs-target="#replyForm" aria-expanded="false" aria-controls="replyForm">
+                          Reply
+                        </button>
+                      </div>
+                        
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
-      </div>
-    </div>
 
-    <footer class="footer">我是 footer</footer>
+      </main>
+    </div>
+    
+    
+    <!-- <footer class="footer">我是 footer</footer> -->
     
   </body>
 </html>
